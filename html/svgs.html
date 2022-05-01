@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURPRISEEEE</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    padding-top: 45px;
+    background: rgb(149,11,189);
+    background: linear-gradient(240deg, rgba(149,11,189,1) 0%, rgba(84,54,153,1) 40%, rgb(2, 1, 0) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 5px;
+    justify-content: space-evenly;
+}
+
+img{
+    max-width: 70%;
+    max-height: 70%;
+    border-radius: 12.5px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    filter: drop-shadow(0px 0px 19px #010112d1);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <script src="../js/svg_loader.js"></script>
+<script>
+    window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) == document.body.offsetHeight) 
+    {
+        setTimeout(function() { window.location = "the real endscreen.html"}, 8000)
+        // window.location = "index.html";
+    }
+};
+</script>
+</body>
+</html>

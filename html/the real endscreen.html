@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            scroll-behavior: smooth;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(30, 22, 79, 1) 20%, rgba(9, 9, 121, 1) 42%, rgba(115, 5, 224, 1) 100%);
+        }
+
+        .content {
+            border-style: none;
+            background-color: transparent;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 100pt;
+            font-family: "Amatic SC", serif;
+        }
+
+        .center {
+            margin: 0;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        #section1 {
+            height: 100%;
+        }
+
+        button {
+            text-decoration: none;
+            color: rgba(221, 221, 221, 0.966);
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(221, 221, 221, 0.966);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey</title>
+</head>
+
+<body>
+    <div id="section1">
+        <button onclick="cycle()" class="center content" id="buttonn">SURPRISEEE</button>
+    </div>
+
+    <script src="../js/confetti.min.js"></script>
+    <script>
+        var counter = -1;
+        var texts = ["HEYYYYYYYY", "Soooooo", "Did you like it???", ":)","I really like you nancy", "I really really really like you", "<a href=\"https://www.youtube.com/playlist?list=PLwhM0xfE4SfgpQXy4N88eKzrHD8Kjqa9k\">mwaahhhhhh</a>", "the end"];
+
+        var butt = document.getElementById('buttonn');
+        function cycle() {
+            confetti.start(1200, 50, 150)
+            counter++;
+            for (var i = 0; i <= texts.length; i++) {
+                if (counter == i) {
+                    butt.innerHTML = texts[i];
+                    break;
+                }
+                else {
+                    continue
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
